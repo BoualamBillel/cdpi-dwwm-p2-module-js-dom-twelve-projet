@@ -29,25 +29,34 @@ section{
 
 .modal{
     display: none;
-    height: 80vh;
+    height: 10em;
+    width: 17em;
+    margin: 2em;
     background-color: rgba(0, 0, 0, 0.567);
     position: fixed;
-    top:10%;
+    top: 35%;
     z-index: 100;
 }
 
-.modal .container{
+.modal.container{
     background-color: aliceblue;
     padding: 3rem;
     color:rgb(40, 40, 40);
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: fixed;
 }
 .modal-quit{
     position: absolute;
+    display: none;
     right:5%;
     top:5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 button{
     background-color: rgb(43, 156, 17);

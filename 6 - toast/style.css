@@ -49,3 +49,12 @@ button:active{
 .toast:hover{
     opacity: 0.33;
 }
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.toast.fade-out {
+    animation: fadeOut 0.5s forwards; /* Animation de disparition */
+}
