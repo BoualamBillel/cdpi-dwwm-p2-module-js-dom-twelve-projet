@@ -22,9 +22,10 @@ btn.addEventListener("click", () => {
     ctnToasts.appendChild(toast_div); // J'insère la div toast dans le conteneur toasts
     toast_div.appendChild(pTag_element); // J'insère le paragraphe dans la div toast
 
-    toast_div.addEventListener("click", (e) => {
-        toast_div.classList.add("fade-out");
-        setTimeout(() => { toast_div.remove(); }, 600);
+    // j'ecoute l'événement Click sur la div toast
+    toast_div.addEventListener("click", () => {
+        toast_div.classList.add("fade-out"); // Transition en fade out pour faire disparaitre la div
+        setTimeout(() => { toast_div.remove(); }, 600); // Suppression de la div dans le html
     });
 
 });

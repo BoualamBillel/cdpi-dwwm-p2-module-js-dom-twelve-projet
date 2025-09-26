@@ -11,10 +11,13 @@
 const questions = document.querySelectorAll(".question");
 
 // 2. Je parcours toutes les questions
-questions.forEach(function(question){
+questions.forEach(function (question) {
     // 3. Lors du click sur la question
-    question.addEventListener("click",function(){
+    question.addEventListener("click", function () {
         // 4. Je recupere la reponse correspondante et le chevron correspondante
         // ..
+        const reponse = question.nextElementSibling;
+        reponse.classList.toggle("show-reponse");
+        console.log(reponse)
     });
 });
